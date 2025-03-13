@@ -24,7 +24,7 @@ Module ProgramSoap
         Try
             Dim wRequestBody = New CheckVAT.checkVatRequestBody With {
             .countryCode = "IT",
-            .vatNumber = "02223210135"
+            .vatNumber = "00905811006"
             }
             Dim wRequest = New CheckVAT.checkVatRequest With {
            .Body = wRequestBody
