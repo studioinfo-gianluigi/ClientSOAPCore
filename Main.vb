@@ -6,12 +6,15 @@
         Console.WriteLine("Choose a service to call:")
         Console.WriteLine("1 - Rest")
         Console.WriteLine("2 - SOAP")
+        Console.WriteLine("3 - SOAP with custom certificate validation")
         Dim service As Integer = Convert.ToInt32(Console.ReadLine())
         Select Case service
             Case 1
                 ProgramRest.CallService()
             Case 2
                 ProgramSoap.CallService()
+            Case 3
+                ProgramSoapSolution.CallService()
             Case Else
                 Console.WriteLine("Invalid choice")
         End Select
